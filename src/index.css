@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --site-bg: #070707;
+  --panel: rgba(18, 21, 20, 0.72);
+  --panel-strong: rgba(25, 29, 27, 0.9);
+  --line: rgba(255, 255, 255, 0.12);
+  --line-strong: rgba(255, 255, 255, 0.22);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  overflow-x: hidden;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(140deg, rgba(69, 240, 181, 0.1), transparent 34%),
+    linear-gradient(310deg, rgba(255, 122, 104, 0.1), transparent 30%),
+    var(--site-bg);
+  background-size: 72px 72px, 72px 72px, auto, auto, auto;
+  color: #f7faf8;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
+  letter-spacing: 0;
+}
+
+body::selection {
+  background: rgba(69, 240, 181, 0.32);
+  color: #ffffff;
+}
+
+img,
+svg {
+  display: block;
+}
+
+button,
+a,
+input,
+textarea {
+  letter-spacing: 0;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090a09;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #45f0b5, #4dd8ff);
+  border-radius: 999px;
+}
+
+@layer components {
+  .site-container {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .glass-panel {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    box-shadow: 0 22px 80px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(22px);
+  }
+
+  .glass-panel-strong {
+    background: var(--panel-strong);
+    border: 1px solid var(--line-strong);
+    border-radius: 8px;
+    box-shadow: 0 22px 80px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(22px);
+  }
+
+  .section-padding {
+    @apply py-20 sm:py-24 lg:py-28;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-semibold uppercase text-mint;
+  }
+
+  .gradient-text {
+    @apply bg-accent-text bg-clip-text text-transparent;
+  }
+
+  .icon-button {
+    @apply inline-flex h-11 w-11 items-center justify-center rounded-lg border border-white/10 bg-white/[0.06] text-white transition duration-300 hover:-translate-y-1 hover:border-mint/50 hover:bg-mint/10 hover:text-mint focus:outline-none focus:ring-2 focus:ring-mint/70;
+  }
+
+  .primary-button {
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-mint px-5 py-3 text-sm font-bold text-ink shadow-glow transition duration-300 hover:-translate-y-1 hover:bg-aqua focus:outline-none focus:ring-2 focus:ring-mint/70 focus:ring-offset-2 focus:ring-offset-ink;
+  }
+
+  .secondary-button {
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-white/15 bg-white/[0.06] px-5 py-3 text-sm font-bold text-white transition duration-300 hover:-translate-y-1 hover:border-aqua/60 hover:bg-aqua/10 hover:text-aqua focus:outline-none focus:ring-2 focus:ring-aqua/70 focus:ring-offset-2 focus:ring-offset-ink;
+  }
+
+  .muted-copy {
+    @apply text-sm leading-7 text-smoke sm:text-base;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .line-clamp-2 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+}
