@@ -1,5 +1,6 @@
 import restaurantImg from '../assets/restaurant.png';
 import ecommerceImg from '../assets/ecommerce.png';
+import estateXImg from '../assets/estateX.png';
 
 export const projects = [
  {
@@ -27,16 +28,17 @@ export const projects = [
   pattern: 'commerce'
 },
   {
-    title: 'Realtime Chat Hub',
-    subtitle: 'Messaging and collaboration app',
-    description:
-      'A realtime chat interface with conversation states, authentication-ready architecture, responsive layout, and notification-friendly UI.',
-    stack: ['React', 'Node.js', 'Socket.io', 'Express', 'MongoDB'],
-    github: 'https://github.com/sharmavansh932',
-    demo: 'https://github.com/sharmavansh932',
-    accent: '#4dd8ff',
-    pattern: 'chat'
-  },
+  title: 'EstateX',
+  subtitle: 'Modern Real Estate Platform',
+  description:
+    'A responsive real estate platform that allows users to explore properties, filter listings by category, view detailed property information, and connect with agents through an intuitive and user-friendly interface.',
+  stack: ['React', 'JavaScript', 'Tailwind CSS', 'Vite'],
+  github: 'https://github.com/vanshsharma06/estateX',
+  demo: 'https://estate-x-pearl.vercel.app/',
+  accent: '#4dd8ff',
+  image: estateXImg,
+  pattern: 'realestate'
+},
   {
     title: 'Portfolio Analytics',
     subtitle: 'Developer profile insights',
