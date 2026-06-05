@@ -1,5 +1,5 @@
 import restaurantImg from '../assets/restaurant.png';
-// import ecommerceImg from '../assets/ecommerce.png';
+import ecommerceImg from '../assets/ecommerce.png';
 
 export const projects = [
  {
@@ -22,7 +22,7 @@ export const projects = [
   stack: ['React', 'Redux', 'Node.js', 'Express', 'MongoDB'],
   github: 'https://github.com/vanshsharma06/ECommerce',
   demo: 'https://e-commerce-one-tau-87.vercel.app/',
-  image: eccomerce,
+  image: ecommerceImg,
   accent: '#f8b84e',
   pattern: 'commerce'
 },
