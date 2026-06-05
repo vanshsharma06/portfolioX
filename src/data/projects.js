@@ -8,23 +8,24 @@ export const projects = [
   description:
     'QR menu ordering system with cart, order management and admin dashboard.',
   stack: ['React', 'Node.js', 'Express', 'MongoDB'],
-  github: 'https://github.com/sharmavansh932/Restaurant_website',
-  demo: 'https://your-vercel-link.vercel.app',
+  github: 'https://github.com/vanshsharma06/Restaurant_website',
+  demo: 'https://restaurant-website-zeta-swart.vercel.app/',
   image: restaurantImg,
   accent: '#45f0b5',
   pattern: 'pipeline'
 },
   {
-    title: 'CommerceFlow Store',
-    subtitle: 'Modern e-commerce experience',
-    description:
-      'A responsive store interface with product discovery, cart state, checkout-ready data models, and a polished admin-friendly structure.',
-    stack: ['React', 'JavaScript', 'Express', 'MongoDB', 'Razorpay'],
-    github: 'https://github.com/sharmavansh932',
-    demo: 'https://github.com/sharmavansh932',
-    accent: '#f8b84e',
-    pattern: 'commerce'
-  },
+  title: 'E-Commerce',
+  subtitle: 'Full-Stack Online Shopping Platform',
+  description:
+    'A full-stack e-commerce application featuring product browsing, category filtering, cart management, secure user authentication, and online payment integration for a seamless shopping experience.',
+  stack: ['React', 'Redux', 'Node.js', 'Express', 'MongoDB'],
+  github: 'https://github.com/vanshsharma06/ECommerce',
+  demo: 'https://e-commerce-one-tau-87.vercel.app/',
+  image: eccomerce,
+  accent: '#f8b84e',
+  pattern: 'commerce'
+},
   {
     title: 'Realtime Chat Hub',
     subtitle: 'Messaging and collaboration app',
